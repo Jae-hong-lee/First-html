@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+
+ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
+/* 박스모델 , 크롬 개발자모드 */
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+    padding-left: 33px;
+}
+/* grid 라는 id 값을 가지는 ol 태그 */
+#grid #article {
+    padding-left: 25px;
+}
+/* grod id값에 article id값. */
+
+/* 미디어 쿼리 사용, 반응형 웹에 관하여 */
+@media(max-width:800px){
+    #grid {
+    display: block;
+    }
+    ol{
+        border-right: none;
+    }
+    h1{
+        border-bottom: none;
+        font-size: 30px;
+    }
+}

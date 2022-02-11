@@ -10,7 +10,18 @@
 </head>
 
 <body>
+
     <h1><a href="First.html">First HTML</a></h1>
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        // document.querySelector('a').style.color=  'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+
     <div id="grid">
         <ol>
             <li><a href="1.html" class="saw">드림코딩엘리</a></li>
@@ -26,6 +37,7 @@
 
             <ul>
                 <li>첫번째 스텝 생활코딩 HTML 강의 <strong>완료</strong></li>
+                <li>css 생활코딩 강의 <strong>완료</strong></li>
                 <li>김버그씨 HTML + CSS <b>진행중</b></li>
                 <li>드림코딩 엘리 HTML + CSS + JS 강의 <b>진행중</b></li>
                 <li>다음 과정은 ...</li>

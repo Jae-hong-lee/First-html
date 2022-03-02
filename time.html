@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부 시간표</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Mon</th>
+                <th scope="col">Tue</th>
+                <th scope="col">Wed</th>
+                <th scope="col">Thu</th>
+                <th scope="col">Fri</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1교시</th>
+                <td rowspan="2" class="html-css-basic">김버그의 HTML &amp; CSS</td>
+                <td class="js-skillup">노마드 코드 JS 크롬 앱</td>
+                <td rowspan="2" class="html-css-basic">김버그의 HTML &amp; CSS</td>
+                <td class="js-skillup">노마드 코드 JS 크롬 앱</td>
+                <td rowspan="2" class="html-css-basic">김버그의 HTML &amp; CSS</td>
+            </tr>
+<!-- rowspan으로 2교시에 셀을 가져다 써서 밑에서는 생략가능, 이스케이프 문자. -->
+            <tr>
+                <th scope="row">2교시</th>
+                <!-- <td rowspan="2">김버그의 HTML &amp; CSS</td> -->
+                <td rowspan="2" class="coding">나코테 알고리즘 정리</td>
+                <!-- <td>김버그의 HTML &amp; CSS</td> -->
+                <td rowspan="2" class="coding">나코테 알고리즘 정리</td>
+                <!-- <td>김버그의 HTML &amp; CSS</td> -->
+            </tr>
+
+            <tr>
+                <th scope="row">3교시</th>
+                <td class="js-basic">드림코딩엘리 JS 기초</td>
+                <!-- <td rowspan="2">나코테 알고리즘 정리</td> -->
+                <td class="js-basic">드림코딩엘리 JS 기초</td>
+                <!-- <td rowspan="2">나코테 알고리즘 정리</td> -->
+                <td class="js-basic">드림코딩엘리 JS 기초</td>
+            </tr>
+            <!-- 점심시간 : 가로 6칸을 차지!  -->
+            <tr>
+                <th colspan="6" scope="row">점심시간</th>
+            </tr>
+
+            <tr>
+                <th scope="row">4교시</th>
+                <td>JS 알고리즘 정리</td>
+                <td rowspan="2" class="sass-basic">포토폴리오 클론코딩</td>
+                <td rowspan="2" class="portfolio">Python스터디</td>
+                <td rowspan="2" class="portfolio">Python스터디</td>
+                <td>JS 알고리즘 스터디</td>
+            </tr>
+            <tr>
+                <th scope="row">5교시</th>
+                <td>Git</td>
+                <td>Git</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
